@@ -21,6 +21,19 @@
 
     </androidx.recyclerview.widget.RecyclerView>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_width="411dp"
+        android:layout_height="276dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_bar"
         android:layout_width="match_parent"
