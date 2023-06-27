@@ -26,9 +26,9 @@ class MainActivity : AppCompatActivity() {
         init(recyclerView)
         init(recyclerView2)
         val profileList = listOf(
-            UserModel("Emily", 25, "Painter", R.drawable.carsouel1),
-            UserModel("John", 30, "Doctor", R.drawable.carousel2),
-            UserModel("Priya", 28, "Actor",R.drawable.carousel3),
+            UserModel("Emily 25", 25, "Painter", R.drawable.carsouel1),
+            UserModel("John 30", 30, "Doctor", R.drawable.carousel2),
+            UserModel("Priya 28", 28, "Actor",R.drawable.carousel3),
             // Add more Person objects as needed
         )
         matchAdapter = MatchAdapter(profileList, this)
