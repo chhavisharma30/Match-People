@@ -1,5 +1,6 @@
 package com.example.matchpeoples
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -34,6 +35,12 @@ class MainActivity : AppCompatActivity() {
         matchAdapter = MatchAdapter(profileList, this)
         recyclerView.adapter = matchAdapter
         recyclerView2.adapter=matchAdapter
+
+        Button.setOnClickListener {
+            // Start the new activity
+            val intent = Intent(this@MainActivity, SeeAll::class.java)
+            startActivity(intent)
+        }
     }
 
 

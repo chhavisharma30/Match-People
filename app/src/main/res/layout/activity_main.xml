@@ -70,14 +70,16 @@
         app:layout_constraintTop_toBottomOf="@+id/recyclerView"
         app:layout_constraintVertical_bias="0.6" />
 
-    <TextView
-        android:id="@+id/textView2"
+    <Button
+        android:id="@+id/Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="See All"
         android:textColor="#F42053"
+        android:textAllCaps="false"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.942"
