@@ -1,5 +1,6 @@
 package com.example.matchpeoples
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -27,7 +28,7 @@ class SeeAll : AppCompatActivity() {
         //making status bar transparent
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
 
-
+        //implemented recycler view
         init(recyclerView3)
         val profileList = listOf(
             UserModel("Emily 25", 25, "Painter", R.drawable.carsouel1),
@@ -38,6 +39,12 @@ class SeeAll : AppCompatActivity() {
         matchAdapter = MatchAdapter(profileList, this)
         recyclerView3.adapter = matchAdapter
 
+        //implementing FAB
+        floatingActionButton.setOnClickListener {
+            // Start the new activity here
+            val intent = Intent(this@SeeAll, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun init(recyclerView: RecyclerView){
