@@ -41,12 +41,12 @@ class SeeAll : AppCompatActivity() {
 
         //implementing FAB
         floatingActionButton.setOnClickListener {
-            // Start the new activity here
             val intent = Intent(this@SeeAll, MainActivity::class.java)
             startActivity(intent)
         }
     }
 
+    //initializing recycler view
     private fun init(recyclerView: RecyclerView){
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = GridLayoutManager(this, 2)
