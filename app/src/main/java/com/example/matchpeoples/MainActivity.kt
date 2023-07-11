@@ -38,7 +38,8 @@ class MainActivity : AppCompatActivity() {
 
         Button.setOnClickListener {
             // Start the new activity
-            val intent = Intent(this@MainActivity, SeeAll::class.java)
+            //val intent = Intent(this@MainActivity, SeeAll::class.java)
+            val intent = Intent(this@MainActivity,Matched::class.java)
             startActivity(intent)
         }
     }
