@@ -6,6 +6,7 @@ import android.view.View
 import android.view.Window
 import android.widget.FrameLayout
 import android.widget.ImageView
+import android.widget.ProgressBar
 import kotlinx.android.synthetic.main.activity_matched.*
 import kotlin.random.Random
 
@@ -58,6 +59,9 @@ class Matched : AppCompatActivity() {
             (heartImageView.parent as FrameLayout).addView(heart)
         }
 
+        //progress bar
+        val progress = 50
+        progressBar2.progress = progress
 
     }
 }
