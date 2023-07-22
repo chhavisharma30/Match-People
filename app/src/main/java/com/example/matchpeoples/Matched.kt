@@ -61,7 +61,7 @@ class Matched : AppCompatActivity() {
 
         //progress bar
         val progress = 50
-        progressBar2.progress = progress
+//        progressBar2.progress = progress
 
     }
 }

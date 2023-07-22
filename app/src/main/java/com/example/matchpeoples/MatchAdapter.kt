@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 
 class MatchAdapter(private  val profileList : List<UserModel>, private val context : Context):
     RecyclerView.Adapter<MatchAdapter.ViewHolder>(){
@@ -34,9 +35,18 @@ class MatchAdapter(private  val profileList : List<UserModel>, private val conte
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val profile = profileList[position]
-        holder.userImage.setImageResource(profile.image)
         holder.userNameAge.text=profile.name
         holder.userOccupation.text=profile.occupation
+
+
+
+        Glide.with(context)
+            .load(profile.ImageUrl)
+            .override(150, 150) // Replace 150 with the desired width and height in pixels
+            .centerCrop() // or .fitCenter() depending on how you want to scale the image
+            .into(holder.userImage)
+
+
     }
 
 }
