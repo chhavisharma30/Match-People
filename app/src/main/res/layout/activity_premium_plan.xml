@@ -465,7 +465,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/mulish_semibold"
-                    android:text="Picks"
+                    android:text=" Picks"
                     android:textColor="#FF4D67"
                     android:layout_marginLeft="12dp"
                     android:textSize="32dp"
