@@ -17,24 +17,23 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".PaymentMethodActivity"
-            android:exported="true" >
-
-
-
+            android:name=".CardReviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddCardActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
         </activity>
         <activity
+            android:name=".PaymentMethodActivity"
+            android:exported="true"></activity>
+        <activity
             android:name=".Premium_Plans_Activity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Matched"
             android:exported="false" />
@@ -43,13 +42,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
-
-
-
-
-
-        </activity>
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"
