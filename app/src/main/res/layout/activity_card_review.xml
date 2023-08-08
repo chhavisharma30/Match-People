@@ -125,6 +125,7 @@
 
 
         <LinearLayout
+            android:id="@+id/ll_1_cardreview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -140,7 +141,7 @@
                 android:text="Name on card"
                 android:textColor="@color/black"
                 android:fontFamily="@font/mulish_semibold"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="2dp"
                 android:layout_marginLeft="17dp"/>
 
             <EditText
@@ -205,6 +206,7 @@
 
 
                 <LinearLayout
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -221,13 +223,11 @@
 
 
                     <EditText
-                        android:layout_width="wrap_content"
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
-
-
-                        android:paddingLeft="58dp"
-                        android:paddingRight="58dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="8dp"
                         android:paddingBottom="25dp"
                         android:paddingTop="25dp"
                         android:textColor="@color/black"
@@ -268,7 +268,138 @@
         </LinearLayout>
 
 
+        <RelativeLayout
+            android:id="@+id/relativelayout_cardReview"
 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_1_cardreview">
+
+            <TextView
+                android:id="@+id/yourplan_cardReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:fontFamily="@font/mulish_semibold"
+                android:text="Your Plan"
+                android:textColor="@color/black"
+                android:textSize="28dp" />
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35dp"
+                android:src="@drawable/edit"/>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/price_cardreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/pink_curve_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/relativelayout_cardReview">
+
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:fontFamily="@font/mulish_bold"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="64dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulish_semibold"
+                android:text="months"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView10"
+                app:layout_constraintEnd_toStartOf="@+id/textView12"
+                app:layout_constraintHorizontal_bias="0.096"
+                app:layout_constraintStart_toEndOf="@+id/textView9"
+                app:layout_constraintTop_toTopOf="@+id/textView9"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/mulish_semibold"
+                android:text="$25/mnth"
+                android:textColor="#85000000"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                app:layout_constraintEnd_toStartOf="@+id/textView12"
+                app:layout_constraintHorizontal_bias="0.106"
+                app:layout_constraintStart_toEndOf="@+id/textView9" />
+
+            <TextView
+
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mulish_semibold"
+                android:text="5%off"
+                android:textColor="#FF4D67"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.885"
+                app:layout_constraintStart_toEndOf="@+id/textView9"
+                app:layout_constraintTop_toTopOf="@+id/textView11"
+                app:layout_constraintVertical_bias="0.435" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/price_cardreview">
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="32dp"
+                android:fontFamily="@font/mulish_semibold"
+                android:text="Pay Now"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+        </LinearLayout>
 
 
 
