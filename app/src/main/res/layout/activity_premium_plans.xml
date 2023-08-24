@@ -62,6 +62,7 @@
 
 
             <LinearLayout
+                android:id="@+id/Platinum_Price1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -128,8 +129,8 @@
 
 
                 <LinearLayout
+                    android:id="@+id/Platinum_Price2"
 
-                    android:id="@+id/upper_middle_ll"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -195,6 +196,8 @@
 
 
             <LinearLayout
+                android:id="@+id/Platinum_Price3"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -313,6 +316,8 @@
 
 
             <LinearLayout
+                android:id="@+id/Gold_Price1"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -375,6 +380,8 @@
 
 
             <LinearLayout
+                android:id="@+id/Gold_price2"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -439,6 +446,8 @@
 
 
             <LinearLayout
+                android:id="@+id/Gold_price3"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -451,6 +460,7 @@
                     android:fontFamily="@font/mulish_semibold"
                     android:text=" 20"
                     android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
                     android:textColor="@color/black"
                     android:textSize="48dp"
                     />
@@ -482,6 +492,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
                     android:layout_marginTop="5dp"
                     android:fontFamily="@font/mulish_extrabold"
                     android:text=" $20"
@@ -526,6 +537,7 @@
 
 
         <TextView
+            android:id="@+id/continue_premimumplan"
             android:layout_marginTop="2dp"
             android:layout_marginRight="40dp"
             android:layout_marginLeft="40dp"

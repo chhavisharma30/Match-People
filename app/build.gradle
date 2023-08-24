@@ -55,6 +55,8 @@ dependencies {
 
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 
+    implementation 'com.razorpay:checkout:1.6.33'
+
 
 
 
